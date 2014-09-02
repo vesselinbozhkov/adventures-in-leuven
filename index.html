@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Adventures in Leuven</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<section id="display">
+		<div id="result">
+			<strong id="beer-score">0</strong>
+			<img src="beer.png" alt="">
+			<strong id="book-score">0</strong>
+			<img src="book.png" alt="">
+			<div id="timer">60</div>
+		</div>
+	</section>
+
+	<section id="start-screen">
+		<div id="choose-player">
+			<strong>Choose player:</strong>
+			<div class="player active-player">
+				<img src="bozhena2.png">
+				<em class="player-name">abe-Bozhena-be</em>
+			</div>
+			<div class="player">
+				<img src="jana.png">
+				<em class="player-name">abe-Jana-be</em>
+			</div>
+			<div class="player">
+				<img src="carlos.png">
+				<em class="player-name">abe-Carlos-be</em>
+			</div>
+			<div class="player">
+				<img src="erkuden.png">
+				<em class="player-name">abe-Erkuden-be</em>
+			</div>
+			<div class="player">
+				<img src="chris.png">
+				<em class="player-name">abe-Christiane-be</em>
+			</div>
+			<div class="player">
+				<img src="zoya.png">
+				<em class="player-name">abe-Zoya-be</em>
+			</div>
+		</div>
+		<button id="start-game" class="start-game" onclick='startGame();'>START</button>
+	</section>
+
+	<section id="end-screen" style="display: none;">
+		<button class="start-game" onclick="begin();">PLAY AGAIN</button>
+	</section>
+
+	<section id="game-field">
+		<div id="player"></div>
+	</section>
+
+	<script src="jQuery.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="ion.sound.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="start-logic.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="script.js" type="text/javascript" charset="utf-8" ></script>
+</body>
+</html>
